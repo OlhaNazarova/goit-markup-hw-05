@@ -185,14 +185,14 @@ transition: color var(--transition-dur-and-func);
 color: var(--accent-color);
 }
 
-.contact-phone-number:hover .contact-icon,
+/* .contact-phone-number:hover .contact-icon,
 .contact-phone-number:focus .contact-icon{
 fill: var(--accent-color);
-}
+} */
 
 .contact-icon{
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
 
 }
 
@@ -524,7 +524,7 @@ border-radius: 4px;}
     width: 170px;
     height: 94px;
     color: #AFB1B8;
-    transition: color var(--transition-dur-and-func);
+    transition: color var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
 
 
@@ -678,7 +678,7 @@ text-align: center;
 letter-spacing: 0.03em;
 cursor: pointer;
 border-color: transparent;
-transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func);
+transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 
 }
 
@@ -705,6 +705,7 @@ transition: color var(--transition-dur-and-func), background-color var(--transit
 
 .portfolio-link{
     display: block;
+    transition: box-shadow var(--transition-dur-and-func);
 }
 .portfolio-link:hover,
 .portfolio-link:focus{
